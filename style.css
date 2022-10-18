@@ -21,7 +21,7 @@ header {
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -55,6 +55,12 @@ nav ul li:last-child a {
 
 #menu-mobile {
     display: none;
+    margin: 0 15px;
+    font-size: 40px
+}
+
+#menu-mobile a {
+    color: white;
 }
 
 /* main rules */
@@ -113,7 +119,7 @@ main {
 .card.big img {
     height: 275px;
     align-self: flex-end;
-    margin: 30px 60px 0 30px;
+    margin: 0 60px 0 30px;
 }
 
 .content {
@@ -155,7 +161,7 @@ main {
 #second .card {
     width: 35%;
     background-color: white;
-    margin: 0;
+    margin: 0 15px;
 }
 
 #second article img {
@@ -265,7 +271,8 @@ main {
 /* fourth section */
 #fourth {
     background-color: #9792e4;
-    margin: 75px 0;
+    margin: 75px 0 50px;
+    padding-bottom: 50px;
 }
 
 #fourth .title {
@@ -304,4 +311,254 @@ main {
 
 #fourth .card > div:last-child {
     margin-top: 30px
+}
+
+/* fifth section */
+#fifth {
+    margin: 100px 0;
+}
+
+#fifth .container {
+    display: flex;
+    justify-content: center;
+}
+
+#fifth .title {
+    font-size: 70px;
+    margin: 0 0 50px;
+}
+
+#fifth .container > div:first-child {
+    padding: 0 75px;
+}
+
+#fifth .container > div:first-child p {
+    line-height: 2;
+    font-size: 22px;
+}
+
+#fifth .container > div:last-child {
+    padding: 0 50px;
+}
+
+.about {
+    width: 250px;
+    height: 250px;
+    background-image: url("img/about.jpg");
+    position:relative
+}
+
+.about span {
+    color: #9792e4;
+    font-size: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-quote {
+    width: 250px;
+    margin: 25px 0;
+    color: #9792e4;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.linkedin a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 15px;
+    background-color: #9792e4;
+    border-radius: 25px;
+}
+
+/* sixth section */
+#sixth {
+    background-color: #9792e4;
+    padding: 50px 0;
+}
+
+.wrapper {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.wrapper > div {
+    margin: 0 auto;
+}
+
+#beta {
+    max-width: 400px;
+}
+
+/* footer */
+footer {
+    height: 200px;
+    background-color: rgb(49, 47, 47);
+    color: white;
+    font-size: 18px;
+}
+
+footer .wrapper {
+    height: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* tablet version */
+@media screen and (max-width:768px) {
+    /* header rules */
+    .container  {
+        width: 95%;
+    }
+
+    #menu-desktop {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: block;
+    }
+
+    /* first section */
+    .card.big {
+        display: block;
+    }
+
+    /* second section */
+    #second .container {
+        display: block;
+    }
+
+    #second .container article {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .subtitle {
+        font-size: 70px;
+        margin: 0 0 50px;
+    }
+
+    #second .card {
+        width: 100%;
+        margin: 25px auto;
+    }
+
+    /* fourth section  */
+    #fourth .card {
+        width: calc(100% / 2 - 30px);
+    }
+
+    /* fifth section */
+    #fifth .container > div:first-child {
+        padding: 0 25px 0 50px;
+    }
+}
+
+/* phone version */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+
+    /* header rules */
+    header .container img {
+        margin: 0;
+    }
+
+    #menu-mobile {
+        margin: 0;
+    }
+
+    /* first section */
+    .cards {
+        display: block;
+    }
+    
+    .card.big, .card {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .card.big img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* second section */
+    #second article img {
+        margin: 50px 0;
+    }
+
+    .subtitle {
+        font-size: 35px;
+    }
+
+    #second .card img {
+        width: 100%;
+    }
+
+    /* third section */
+    .title {
+        font-size: 35px;
+    }
+
+    #third .card {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #third .card > div:last-child {
+        margin: 0;
+    }
+
+    .testimonial-photo {
+        margin: 0 auto;
+    }
+
+    /* fourth section */
+    #fourth .card {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .content .icon {
+        font-size: 50px;
+    }
+
+    /* fifth section */
+    #fifth .container {
+        display: block;
+    }
+
+    #fifth .container > div:first-child {
+        padding: 0;
+    }
+
+    #fifth .container > div:last-child {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .about {
+        margin: 0;
+        width: 150px;
+        height: 150px;
+    }
+
+    .about span {
+        font-size: 50px;
+    }
+
+    /* last section and footer */
+    .wrapper {
+        width: 90%;
+    }
 }
