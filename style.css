@@ -383,15 +383,58 @@ main {
 .wrapper {
     text-align: center;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 650px;
 }
 
 .wrapper > div {
     margin: 0 auto;
 }
 
+#get-started {
+    color: #cbc9f1;
+}
+
+#simple {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+#free {
+    color: #fdc15f;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 40px auto;
+}
+
 #beta {
-    max-width: 400px;
+    max-width: 500px;
+    color: white;
+    line-height: 1.5;
+}
+
+#get-started-btn {
+    margin: 60px auto;
+}
+
+#get-started-btn a {
+    text-decoration: none;
+    color: #9792e4;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 35px;
+    padding: 20px 85px;
+}
+
+#copyright {
+    color: white;
+    font-size: 17px;
+}
+
+#copyright span {
+    text-decoration: underline;
 }
 
 /* footer */
@@ -411,7 +454,7 @@ footer .wrapper {
 }
 
 /* tablet version */
-@media screen and (max-width:768px) {
+@media screen and (max-width:945px) {
     /* header rules */
     .container  {
         width: 95%;
@@ -462,7 +505,7 @@ footer .wrapper {
 }
 
 /* phone version */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 612px) {
     .container {
         width: 80%;
     }
@@ -560,5 +603,21 @@ footer .wrapper {
     /* last section and footer */
     .wrapper {
         width: 90%;
+    }
+
+    #simple {
+        font-size: 30px;
+    }
+
+    #free {
+        font-size: 60px;
+    }
+
+    #beta {
+        font-size: 18px;
+    }
+
+    #copyright {
+        font-size: 15px;
     }
 }
